@@ -2253,7 +2253,7 @@ left: 0;
 	width: 98%;
 	}
 	
-	#contact_form input[type=text],#contact_form textarea,#contact_form input[type=email],#contact_form input[type=number],#search, #contact_form select{
+	#submit-form input[type=text],#submit-form textarea,#submit-form input[type=email],#submit-form input[type=number],#search, #submit-form select{
 	padding:10px;
 	margin-bottom:20px;
 	color:#fff;
@@ -2263,7 +2263,7 @@ left: 0;
 	height:auto;
 	}
 
-	.de_light #contact_form input[type=text],.de_light #contact_form textarea,.de_light #contact_form input[type=email], .de_light #search, 	.de_light #contact_form select
+	.de_light #submit-form input[type=text],.de_light #submit-form textarea,.de_light #submit-form input[type=email], .de_light #search, 	.de_light #submit-form select
 		{
 		border-radius: 5px !important;
 		-moz-border-radius: 5px !important;
@@ -2274,34 +2274,34 @@ left: 0;
 		}
 
 
-	#contact_form select{
+	#submit-form select{
 		background: url(../images/ui/select-arrow.png) right center no-repeat !important;
 	}
 
-	#contact_form select option{
+	#submit-form select option{
 		color: #000000;
 	}
 
-	.de_light #contact_form select{
+	.de_light #submit-form select{
 		background: url(../images/ui/select-arrow-invert.png) right center no-repeat !important;
 	}
 	
 	
-	#contact_form input[placeholder],#contact_form textarea[placeholder]{
+	#submit-form input[placeholder],#submit-form textarea[placeholder]{
 	color:#eee;
 	}
 	
-	#contact_form input[type=submit].btn-line{
+	#submit-form input[type=submit].btn-line{
 	background:none;
 	padding:8px 20px;
 	}
 	
-	#contact_form input[type=submit].btn-line:hover{
+	#submit-form input[type=submit].btn-line:hover{
 	background:#111;
 	border-color:#111;
 	}
 	
-	#contact_form textarea{
+	#submit-form textarea{
 	height:178px;
 	}
 	
@@ -3180,8 +3180,8 @@ left: 0;
 		-webkit-border-radius: 5px;
 	}
 
-	#contact_form input[type="radio"] + label, 
-	#contact_form input[type="checkbox"] + label {
+	#submit-form input[type="radio"] + label, 
+	#submit-form input[type="checkbox"] + label {
 		margin-right: 10px;
 	}
 	
@@ -3211,8 +3211,8 @@ left: 0;
 		color: #333;
 	}
 
-	#contact_form .radio-img input[type="radio"] + label, 
-	#contact_form .radio-img input[type="checkbox"] + label{
+	#submit-form .radio-img input[type="radio"] + label, 
+	#submit-form .radio-img input[type="checkbox"] + label{
 		padding: 0px;
 		position: relative;
 		background: none;
@@ -3222,15 +3222,15 @@ left: 0;
 		margin-right: 20px;
 	}
 
-	#contact_form .radio-img input[type="radio"] + label:before, 
-	#contact_form .radio-img input[type="checkbox"] + label:before {
+	#submit-form .radio-img input[type="radio"] + label:before, 
+	#submit-form .radio-img input[type="checkbox"] + label:before {
 		position: absolute;
 		top: 10px;
 		left: 15px;
 	}
 
-	#contact_form .radio-img input[type="radio"] + label img, 
-	#contact_form .radio-img input[type="checkbox"] + label img{
+	#submit-form .radio-img input[type="radio"] + label img, 
+	#submit-form .radio-img input[type="checkbox"] + label img{
 		width: 100%;
 		margin-bottom: 10px;
 		border-radius: 5px;
@@ -3238,18 +3238,18 @@ left: 0;
 		-webkit-border-radius: 5px;
 	}
 
-	#contact_form .radio-img input[type="radio"]:checked + label img, 
-	#contact_form .radio-img input[type="checkbox"]:checked + label img{
+	#submit-form .radio-img input[type="radio"]:checked + label img, 
+	#submit-form .radio-img input[type="checkbox"]:checked + label img{
 		width: 100%;
 		padding: 8px;
 		background: var(--primary-color-1);
 	}
 
 
-	#contact_form.s2 .radio-img input[type="radio"] + label, 
-	#contact_form.s2 .radio-img input[type="checkbox"] + label,
-	#contact_form .radio-img input[type="radio"] + label img, 
-	#contact_form .radio-img input[type="checkbox"] + label img{
+	#submit-form.s2 .radio-img input[type="radio"] + label, 
+	#submit-form.s2 .radio-img input[type="checkbox"] + label,
+	#submit-form .radio-img input[type="radio"] + label img, 
+	#submit-form .radio-img input[type="checkbox"] + label img{
 		width: 100%;
 		float: none;
 	}
@@ -5301,8 +5301,8 @@ de_tab .de_nav li span,
 .de-gallery .overlay .icon i,
 .de-gallery .overlay .icon i:hover,
 header.smaller:not(.header-bottom),
-#contact_form input[type=submit],
-#contact_form input[type=submit]:hover,
+#submit-form input[type=submit],
+#submit-form input[type=submit]:hover,
 .product img,
 .product img:hover,
 .mfp-close,.mfp-close:hover,
@@ -5337,7 +5337,7 @@ ul#slide-list *,
 .f-num-inc *,
 .picframe *,
 #de-extra-menu,
-#contact_form *,
+#submit-form *,
 .de__pcard  *,
 .de__pic-hover *,
 .de-hover *,

@@ -29,6 +29,8 @@
 	<!-- revolution slider -->
 	<link rel="stylesheet" href="assets/rs-plugin/css/settings.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/rev-settings.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
@@ -369,7 +371,7 @@
 				<div class="row">
 
 					<div class="col-md-8">
-						<form name="contactForm" id='contact_form' method="post">
+						<form id="submit-form" action="">
 							<div class="row">
 								<div class="col-md-12 mb10">
 									<h3>Send Us Message</h3>
@@ -377,13 +379,13 @@
 								<div class="col-md-6">
 									<div id='name_error' class='error'>Please enter your name.</div>
 									<div>
-										<input type='text' name='Name' id='name' class="form-control"
+										<input type='text' name='name' id='name' class="form-control"
 											placeholder="Your Name" required>
 									</div>
 
 									<div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
 									<div>
-										<input type='email' name='Email' id='email' class="form-control"
+										<input type='email' name='email' id='email' class="form-control"
 											placeholder="Your Email" required>
 									</div>
 
@@ -403,7 +405,7 @@
 
 								<div class="col-md-12">
 									<p id='submit' class="mt20">
-										<input type='submit' id='send_message' value='Submit Form' class="btn btn-line">
+										<input type="submit" value="Submit" class="btn btn-line">
 									</p>
 								</div>
 							</div>
@@ -424,12 +426,12 @@
 						<div class="widget widget_text">
 							<h3>Contact Info</h3>
 							<address>
-								<span><strong>Address:</strong>100 S Main St, La LA la, CA</span>
-								<span><strong>Phone:</strong>999 999 9999</span>
-								<span><strong>Fax:</strong>999 999 9999</span>
+								<span><strong>Address:</strong>Office A1 Astra Business Centre Roman Way - Longridge
+									Road, Ribbleton, Preston, England, PR2 5BB</span>
+								<span><strong>Phone:</strong>+44 7306 263327</span>
 								<span><strong>Email:</strong><a
-										href="mailto:contact@example.com">contact@example.com</a></span>
-								<span><strong>Web:</strong><a href="#test">http://example.com</a></span>
+										href="mailto:expressdn@hotmail.com">expressdn@hotmail.com</a></span>
+								<!-- <span><strong>Web:</strong><a href="#test">http://example.com</a></span> -->
 								<span><strong>Open</strong>Sunday - Friday 08:00 - 18:00</span>
 							</address>
 						</div>
@@ -528,7 +530,25 @@
 
 	</div>
 
+	<script>
+		$("#submit-form").submit((e) => {
+			e.preventDefault()
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbxdSSGV0bKR09D5X5Kd-R8VB84lf171Ru34fTwx3aYdO42xwGeUifrkqIkQl6-DmaEp/exec",
+				data: $("#submit-form").serialize(),
+				method: "post",
+				success: function (response) {
+					alert("Form submitted successfully")
+					window.location.reload()
+					//window.location.href="https://google.com"
+				},
+				error: function (err) {
+					alert("Something Error")
 
+				}
+			})
+		})
+	</script>
 
 	<!-- Javascript Files
     ================================================== -->
